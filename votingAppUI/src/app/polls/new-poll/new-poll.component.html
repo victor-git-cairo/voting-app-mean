@@ -1,0 +1,50 @@
+<!-- https://www.myvote.io/ -->
+<section class="is-full-hd">
+    <div class="columns">
+        <div class="column is-2">
+            <app-sidebar></app-sidebar>
+        </div>
+ 
+        <div>        
+            <form (ngSubmit)="onSubmit(formInfo)" #formInfo="ngForm">
+                <div class="form-group">
+                   <label for="siteNumber">SiteNumber</label>
+                   <input type="text" 
+                      name="siteNumber" 
+                      ngModel
+                      id="siteNumber"
+                      #siteNumber ="ngModel"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                      <input 
+                        type="text" 
+                        name="firstName"
+                        ngModel 
+                        #firstName = "ngModel"
+                        id="firstName"
+                       >
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">LastName</label>
+                    <input 
+                    type="text" 
+                    name="lastName" 
+                    ngModel
+                    #lastName= "ngModel"
+                    id="lastName"       
+                 >
+                </div>
+                
+                <br>               
+                <br>
+                <button type="submit">Add Poll</button>
+              </form>
+              <pre>{{ formInfo.value|json}}</pre>
+        </div>
+    </div>
+</section>
+

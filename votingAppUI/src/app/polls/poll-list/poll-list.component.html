@@ -1,0 +1,22 @@
+<!-- https://www.myvote.io/ -->
+<section class="is-full-hd">
+    <div class="columns">
+        <div class="column is-2">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="column ml-2">
+            <div *ngFor="let pollSite of pollSites let i = index">
+                <p *ngIf="i%2===0" class="p-1 is-size-4 has-text-left has-text-weight-bol">Poll
+                    Id{{pollSite.siteNumber}}</p>
+                <div class="is-flex">
+                    <div>
+                        <p>{{pollSite.firstName}} {{pollSite.lastName}}</p>
+                    </div>
+                    <div>
+                        <p>Count: {{pollSite.voteCount}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

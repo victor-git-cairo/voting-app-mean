@@ -1,0 +1,55 @@
+How to Start
+ng serve for Angular
+
+npm start for node js
+run mysql server and make sure that the server is running
+
+new new appname
+npm init 
+
+
+https://www.freecodecamp.org/learn/coding-interview-prep/#take-home-projects
+javamastery for more challenges
+
+https://pollunit.com/en/polls/31ymVVCaxukD5mDKX7_FWQ/builds/poll#
+
+https://www.myvote.io/oscars_demo
+
+https://www.youtube.com/watch?v=UYh6EvpQquw
+MEAN Stack CRUD Operations - MEAN Stack Beginners Tutorial
+
+angular node js project - from youtube, not from google
+https://www.youtube.com/watch?v=SqSN6sqbdMQ - cafe management system *****
+
+https://www.youtube.com/watch?v=X-vjBas_pTU&list=PLsjmv9aDmNDAN5adZxbGTlQHlgU2je7KE *********
+
+https://github.com/mysqljs/mysql
+
+https://jasonwatmore.com/post/2018/05/11/angular-6-template-driven-forms-validation-example
+
+https://www.youtube.com/watch?v=F9Qa0NC7HcY
+Select value from dropdown in angular [web api]
+
+https://tania.dev/
+https://blog.logrocket.com/nodejs-expressjs-postgresql-crud-rest-api-example/#creatingadatabase
+
+https://www.tutorialspoint.com/sql/sql-alter-command.htm
+
+https://www.youtube.com/watch?v=EN6Dx22cPRI - Using MySQL With Node.js
+
+https://www.mysqltutorial.org/mysql-nodejs/create-table/ ***
+https://www.youtube.com/watch?v=xn9ef5pod18 - Node.js MySQL Tutorial | Building CRUD App with Node.js Express and MySQL | Edureka
+
+https://www.youtube.com/watch?v=u96rVINbAUI - Install MySQL(Server and Workbench)
+
+https://www.youtube.com/watch?v=GBGDoh1H0aQ
+Can't connect to mysql server [solution] error 2003, 'localhost'(10061) from MySQL Workbench
+
+https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-mysql
+
+Node.js MySQL Tutorial: Create and Manage an Employee Database
+
+https://stackoverflow.com/questions/45891998/posting-form-data-to-mysql-using-nodejs-w-express 
+
+// http get
+// https://jasonwatmore.com/post/2019/09/06/angular-http-get-request-examples
