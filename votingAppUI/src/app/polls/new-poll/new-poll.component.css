@@ -1,0 +1,16 @@
+.main-article {
+    margin: 16px;
+    /* width: 200px; */
+    border-right: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 16px;
+    /* text-align: center; */
+  }
+
+  input {
+   width:70%;
+ 
+  }
+

@@ -1,50 +1,58 @@
 <!-- https://www.myvote.io/ -->
-<section class="is-full-hd">
-    <div class="columns">
-        <div class="column is-2">
+<!-- votetexas.gov -->
+<section>
+    <section class="columns">
+        <!-- show navigation side bar -->
+        <section class="column is-3">
             <app-sidebar></app-sidebar>
-        </div>
- 
-        <div>        
+        </section>
+
+        <!-- Create new site  -->
+        <section class="column main-article is-6">
             <form (ngSubmit)="onSubmit(formInfo)" #formInfo="ngForm">
-                <div class="form-group">
-                   <label for="siteNumber">SiteNumber</label>
-                   <input type="text" 
-                      name="siteNumber" 
-                      ngModel
-                      id="siteNumber"
-                      #siteNumber ="ngModel"
-                    >
+                <!-- Poll Number/ID -->
+                <div class="field">
+                    <label class="label has-text-white" for="pollingPlaceNumber">Polling Place Number</label>
+
+                    <div class="control">
+                        <input class="input" type="text" name="pollingPlaceNumber" ngModel id="pollingPlaceNumber"
+                            #siteNumber="ngModel">
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="firstName">First Name</label>
-                      <input 
-                        type="text" 
-                        name="firstName"
-                        ngModel 
-                        #firstName = "ngModel"
-                        id="firstName"
-                       >
+                <!-- Candidate First Name -->
+                <div class="field">
+                    <label class="label has-text-white" for="firstName">First Name</label>
+
+                    <div class="control">
+                        <input class="input" type="text" name="candidateFirstName" ngModel #firstName="ngModel"
+                            id="candidateFirstName">
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="lastName">LastName</label>
-                    <input 
-                    type="text" 
-                    name="lastName" 
-                    ngModel
-                    #lastName= "ngModel"
-                    id="lastName"       
-                 >
+                <!-- Candidate Last Name -->
+                <div class="field">
+                    <label class="label has-text-white" for="lastName">LastName</label>
+
+                    <div class="control">
+                        <input class="input" type="text" name="candidateLastName" ngModel #lastName="ngModel" id="candidateLastName">
+                    </div>
                 </div>
-                
-                <br>               
-                <br>
-                <button type="submit">Add Poll</button>
-              </form>
-              <pre>{{ formInfo.value|json}}</pre>
-        </div>
-    </div>
+
+                <!-- Party -->
+                <div class="field">
+                    <label class="label has-text-white" for="party">Party</label>
+
+                    <div class="control">
+                        <input class="input" type="text" name="party" ngModel #party="ngModel" id="party">
+                    </div>
+                </div>
+
+                <!-- Button -->
+ 
+                <button class="mt-3 button is-medium is is-success" type="submit"> Save </button>
+            </form>
+            <!-- <pre>{{ formInfo.value|json}}</pre> -->
+        </section>
+    </section>
 </section>
-

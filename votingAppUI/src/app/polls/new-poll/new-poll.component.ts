@@ -31,6 +31,11 @@ export class RegisterPollComponent implements OnInit {
     
     //post data in db through the poll-service
 
+    this.pollService.addAPoll(this.pollInfo).subscribe(()=> {
+
+    }
+   )
+
    
     
    

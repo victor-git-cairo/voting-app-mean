@@ -1,12 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+/* https://www.codinglabweb.com/2022/01/sidebar-menu-in-html-css-javascript.html */
+/* https://zoaibkhan.com/blog/create-a-responsive-sidebar-menu-with-angular-material/ */
+/* boxicon  */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap'); */
+
 
 .panel-font {
-    font-family: 'Lato', sans-serif;
-    font-size: large;
-    font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  font-size: large;
+  font-weight: 600;
 }
 
+.sidenav {
+  margin: 16px;
+  /* width: 200px; */
+  border-right: none;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
 
+.sidenav-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start; */
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
 
+a{
+  color:black;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: rgb(63, 58, 58);
+}
 
 /* font-family: Helvetica, Arial, sans-serif */
