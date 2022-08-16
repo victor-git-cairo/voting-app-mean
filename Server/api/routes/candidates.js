@@ -1,12 +1,10 @@
-//const pollSites = require("../../models/pollsite")
+//import mysqldb connection
+const mysqldbconnection = require("../../db");
 
-const mysqldbconnection = require("../../db")
-
-module.exports = ( router )  => {
-  
-  // get post information
-  router.get('/polls', ( request, response ) => {
-    mysqldbconnection.query('SELECT * FROM votingappdb.polls group by id', (error, rows, fields) => {
+module.exports = ( router )  => {  
+  // GET candidates endpoint
+  router.get('/candidates', ( request, response ) => {
+    mysqldbconnection.query('select * from votingappdb.candidates order by ID', (error, rows, fields) => {
       if (!error) {
         console.log(rows);
         response.send(rows).status(200);
@@ -16,22 +14,24 @@ module.exports = ( router )  => {
          response.send(error);
       }        
     })
-  })
-  // add/post a a new post
-  router.post('/polls', (request, response) => {
-    //let id = request.body.id;
-    let siteNumber = request.body.siteNumber;
+  });
+
+  // POST New Candidate
+  router.post('/candidate', (request, response) => {
+    //let ID = request.body.id;
     let firstName = request.body.firstName;
     let lastName = request.body.lastName;
-    let voteCount = request.body.voteCount;
+    let votes = request.body.votes;
+    let pollingPlaceId = request.body.pollingPlaceId;
+    let partyId = request.body.partyId;    
 
-    var sql = "INSERT INTO Polls VALUES(?,?,?,?)";
-    mysqldbconnection.query(sql, [siteNumber, firstName, lastName, voteCount], (err, result) => {
+    var sql = "insert into candidates values(null,?,?,?,?,?)";
+    mysqldbconnection.query(sql, [firstName,lastName,votes,pollingPlaceId,partyId], (err, result) => {
       if (!err)
         response.send(result).status(201);
-      else
+
       {
-        //console.log(err);
+        console.log(err);
         response.send(err);
       }
     })
